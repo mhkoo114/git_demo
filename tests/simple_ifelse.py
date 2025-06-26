@@ -1,4 +1,5 @@
-# ifelse simple demos
+# if/else simple demos
+# contain multiple function of ifelse
 """
 num = int(input("Enter a number: "))
 if num > 0:
@@ -8,7 +9,7 @@ elif num == 0:
 else:
     print("this is a negative number")
 
-###############
+##################################################################
 
 num = int(input("Enter an integer: "))
 if num % 2 == 0:
@@ -16,7 +17,7 @@ if num % 2 == 0:
 else:
     print(f"{num} is an odd number")
 
-###############
+####################################################################
     
 score = int(input("Enter score(0-100): "))
 if 0 < score or score > 100:
@@ -31,7 +32,9 @@ elif 60 <= score <= 69:
     print("you got grade D")
 else:
     print("you got grade F")
-"""
+
+#################################################################
+    
 weight = int(input("Enter your weight in kg: "))
 height = float(input("Enter your height in meters: "))
 bmi = weight / (height*height)
@@ -44,3 +47,24 @@ elif 25.0 <= bmi <= 29.9:
     print("Overweight")
 else:
     print("Obese")
+
+##############################################################
+
+age = int(input("Enter ur age: "))
+status = "adult" if age >= 18 else "children"
+print(f"You are a {status}")
+
+###############################################################
+"""
+student_status = input("Are u a full time student? (yes/no)").lower()
+if student_status != "yes":
+    print("only full-time students are eligible")
+else:
+    gpa = float(input("Enter your GPA: "))
+    family_income = float(input("Enter your family income: "))
+    if gpa >= 3.7 and family_income <= 2500:
+        print("You are eligible for a Full scholarship")
+    elif gpa >= 3.0 and family_income <= 5000:
+        print("You are eligible for a partial scholarship")
+    else:
+        print("You are not eligible for scholarship")

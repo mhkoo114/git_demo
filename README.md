@@ -1,1 +1,1 @@
-// just doing a testing on git functions
+// simple python practices while testing with git basic funcs
