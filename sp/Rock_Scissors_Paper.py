@@ -7,6 +7,9 @@ while True:
         break
     else:
         choices = {1: "rock", 2: "scissors", 3: "paper"}
+        if player not in [1,2,3,4]:
+            print("Invalid input, please choose again.")
+            continue
         print(f"Your choice: {choices[player]}")
         computer = int(random.randint(1, 3))
         print(f"Computer choice: {choices[computer]}")
