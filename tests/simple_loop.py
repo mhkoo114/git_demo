@@ -1,4 +1,4 @@
-# simplw python loops
+# simple python loops
 """
 for i in range(1, 10):
     print(i, end=" ")   
@@ -80,7 +80,6 @@ else:
 
 #################################################################
         
-"""
 count = 0
 for num in range(2, 101,):
     is_prime = True
@@ -94,3 +93,32 @@ for num in range(2, 101,):
         if count == 5:
             print()
             count = 0
+########################################################################
+
+sum = 0
+plus = 0
+while plus <=100:
+    sum+=plus
+    plus+=1
+print(sum)
+
+############################################################################
+
+name = "itheima is a brand of itcast"
+count = 0
+for a in name:
+    if a == "a":
+        count+=1
+print(count)
+
+#################################################################################
+
+num, count = 100, 0
+for i in range(1,num):
+    if i % 2 == 0:
+        count+=1
+print(count)    # should be 49 even num not include 100
+
+#############################################################################
+
+"""
