@@ -51,5 +51,29 @@ def is_palindrome(data):    # identify words like 'racecar'
 ########################################################################################
 
 """ 
+def analyze_grade(data):
+    total = 0
+    avr = 0
+    max,min = data[0], data[0]
+    passed, failed = 0,0
+    for i in data:
+        total+=i
+        if i > max:
+            max = i
+        if i < min:
+            min = i
+        if i >= 60:
+            passed+=1
+        else:
+            failed+=1
+    avr = total / len(data)
+    print(f"Average: {avr:.2f}\nHighest: {max}\nLowest: {min}\nPassed: {passed}\nFailed: {failed}")
 
-        
+student = []
+while True:
+    score = int(input("Enter score, enter 0 to exit: "))
+    if score == 0:
+        break
+    else:
+        student.append(score)
+analyze_grade(student)
