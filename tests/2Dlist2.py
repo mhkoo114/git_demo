@@ -22,12 +22,17 @@ print(f"Number of even numbers: {count}")
 #######################################################
 """
 items = [1,2,2,3,4,4,4,5]
-# unique = []
-# for i in items:
-#     if i not in unique:
-#         unique.append(i)
-# print("Original: ",items)
-# print('Unique: ',unique)
+"""
+unique = []
+for i in items:
+    if i not in unique:
+        unique.append(i)
+print("Original: ",items)
+print('Unique: ',unique)
+"""
 unique = list(set(items))
 print(f"Original: {items}")
 print("Unique: ",unique)
+
+items.insert(1, "Test") # insert behind the element defined
+print(items)

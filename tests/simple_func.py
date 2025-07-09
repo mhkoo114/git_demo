@@ -49,8 +49,6 @@ def is_palindrome(data):    # identify words like 'racecar'
     reversed_data = data[::-1]
     return data == reversed_data
 ########################################################################################
-
-""" 
 def analyze_grade(data):
     total = 0
     avr = 0
@@ -68,12 +66,42 @@ def analyze_grade(data):
             failed+=1
     avr = total / len(data)
     print(f"Average: {avr:.2f}\nHighest: {max}\nLowest: {min}\nPassed: {passed}\nFailed: {failed}")
+###########################################################################################################################################################
 
-student = []
-while True:
-    score = int(input("Enter score, enter 0 to exit: "))
-    if score == 0:
-        break
+def check_password(password):
+    special_char = "!@#$%^&*"
+    # condition check for the password
+    length = len(password) >= 8
+    has_upper = any(c.isupper() for c in password)
+    has_lower = any(c.islower() for c in password)
+    has_digit = any(c.isdigit() for c in password)
+    has_special = any(c in special_char for c in password)
+
+    if length and has_upper and has_lower and has_special:
+        return "Strong password"
     else:
-        student.append(score)
-analyze_grade(student)
+        return "Too weak"
+#######################################################################################################################
+
+def check_email(email):     # check email validity
+    if email.count("@") != 1:
+        return "Invalid"
+    username, domain = email.split("@")
+    if username == "" or domain == "":
+        return "Invalid"
+    if '.' not in domain:
+        return "Invalid"
+    domain_parts = domain.split('.')
+    if "" in domain_parts:
+        return "Invalid"
+    if len(domain_parts) < 2:
+        return "Invalid"
+    return "Valid"
+########################################################################
+  
+""" 
+def func(*args):
+    for i in args:
+        print(i)
+
+print(func(1, 2, "test", 4, 5))
