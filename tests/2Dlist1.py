@@ -29,3 +29,6 @@ for i in range(len(matrix)):
     for j in range(len(matrix[i])):
         print(matrix[i][j], end=" ")
     print()
+
+# pop(), clear(), del arr[i], remove(), ...
+print(matrix[2][-1])    # print the last number in array

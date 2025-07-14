@@ -100,8 +100,20 @@ def check_email(email):     # check email validity
 ########################################################################
   
 """ 
+# def func(name="john", age=18, gender)
+
+# func(gender="female", age=20, name="man", )
+
+# use * to receive multiple param if doesnt know the exact number
+# then args is a tuple
 def func(*args):
     for i in args:
         print(i)
 
+# if using two ** is key/value, will return kwargs as dict
+def func1(**kwargs):
+    print(kwargs)
+
 print(func(1, 2, "test", 4, 5))
+# to use func1, need to pass both key and value in param
+print(func1(id=1, num=2, name="test"))

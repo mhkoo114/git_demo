@@ -8,3 +8,10 @@ for a in arr:
     for b in a:
         for c in b:
             print(c, end="")
+
+arr2 = [
+    [1, 2, 3], [3, 4, 5]
+]
+# extend a arr by adding in another arr
+arr.extend(arr2)
+print(arr)
