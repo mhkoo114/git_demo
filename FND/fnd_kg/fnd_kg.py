@@ -8,8 +8,8 @@ def load_model():
     """
     Load the trained logistic regression model and vectorizer
     """
-    model_file = 'C:\\develop\\workplace\\codeTwo\\python\\FKDs\\fkd_kaggle\\logistic_regression_model.pkl'
-    vectorizer_file = 'C:\\develop\\workplace\\codeTwo\\python\\FKDs\\fkd_kaggle\\tfidf_vectorizer.pkl'
+    model_file = 'C:\\develop\\code\\2_projects\\python\\FND\\fnd_kg\\logistic_regression_model.pkl'
+    vectorizer_file = 'C:\\develop\\code\\2_projects\\python\\FND\\fnd_kg\\tfidf_vectorizer.pkl'
     
     try:
         model = joblib.load(model_file)

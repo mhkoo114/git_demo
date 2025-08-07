@@ -1,6 +1,0 @@
-This is a test file for python coding.
-First line - python is the best language in the world
-Second line - php is the worst language in the world
-Third line - man! what can i say, mamba out!
-Fourth line - 
-Fifth line
